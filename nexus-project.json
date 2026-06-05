@@ -1,0 +1,349 @@
+{
+  "id": "proj_centro-integrado-de-fisioterapia_ea18df7b",
+  "name": "Centro Integrado de Fisioterapia",
+  "kind": "web",
+  "status": "created",
+  "summary": "Arquivo editado manualmente: docs/nexus-capabilities.json",
+  "engineering": {
+    "version": 2,
+    "createdAt": "2026-06-05T07:23:04.384Z",
+    "projectName": "Centro Integrado de Fisioterapia",
+    "kind": "web",
+    "domain": "local-landing",
+    "model": {
+      "router": "nexus-engineering-router-v1",
+      "selected": "gpt-4o-mini",
+      "roles": {
+        "architect": "gpt-4o-mini",
+        "coder": "gpt-4o-mini",
+        "designer": "gpt-4o-mini",
+        "tester": "gpt-4o-mini"
+      },
+      "reason": "conversion page needs research, copy and visual quality",
+      "policy": "Pick the strongest configured model for architecture first, then use coding, design and test roles for the build loop."
+    },
+    "tools": [
+      {
+        "id": "context_research",
+        "stage": "Research",
+        "purpose": "Prepare company, market, competitor and reference context before writing files.",
+        "order": 1
+      },
+      {
+        "id": "product_architect",
+        "stage": "Plan",
+        "purpose": "Turn the request into screens, entities, routes, file map and acceptance criteria.",
+        "order": 2
+      },
+      {
+        "id": "filesystem_builder",
+        "stage": "Build",
+        "purpose": "Create real project files, configs, docs and editable source code.",
+        "order": 3
+      },
+      {
+        "id": "supabase_schema",
+        "stage": "Database",
+        "purpose": "Model Supabase tables, activity logs, env example and integration notes.",
+        "order": 4
+      },
+      {
+        "id": "visual_quality",
+        "stage": "Design",
+        "purpose": "Check hierarchy, responsiveness, copy, CTA and premium 2026 polish.",
+        "order": 5
+      },
+      {
+        "id": "terminal_validator",
+        "stage": "Validate",
+        "purpose": "Run smoke tests and syntax checks with logs stored in the manifest.",
+        "order": 6
+      },
+      {
+        "id": "self_repair",
+        "stage": "Repair",
+        "purpose": "Iterate up to five cycles when validation fails.",
+        "order": 7
+      },
+      {
+        "id": "preview_inspector",
+        "stage": "Preview",
+        "purpose": "Open the generated preview and keep it connected to project memory.",
+        "order": 8
+      },
+      {
+        "id": "github_release",
+        "stage": "Version",
+        "purpose": "Prepare a repository without secrets and record GitHub delivery steps.",
+        "order": 9
+      },
+      {
+        "id": "render_publisher",
+        "stage": "Deploy",
+        "purpose": "Create or reuse Render deployment, warm the public URL and verify readiness.",
+        "order": 10
+      },
+      {
+        "id": "expo_runtime_builder",
+        "stage": "Mobile",
+        "purpose": "Prepare Expo Go scripts, QR instructions and mobile state structure.",
+        "order": 11
+      }
+    ],
+    "agents": [
+      {
+        "id": "nexus-researcher",
+        "name": "Nexus Researcher",
+        "role": "Find context, risks, references and conversion language.",
+        "order": 1
+      },
+      {
+        "id": "nexus-product-architect",
+        "name": "Nexus Product Architect",
+        "role": "Define product scope, data model, routes and user journeys.",
+        "order": 2
+      },
+      {
+        "id": "nexus-frontend-designer",
+        "name": "Nexus Frontend Designer",
+        "role": "Raise visual quality, animations, responsiveness and UI states.",
+        "order": 3
+      },
+      {
+        "id": "nexus-backend-engineer",
+        "name": "Nexus Backend Engineer",
+        "role": "Create APIs, health checks, persistence and integration contracts.",
+        "order": 4
+      },
+      {
+        "id": "nexus-database-engineer",
+        "name": "Nexus Database Engineer",
+        "role": "Design Supabase schema, seeds, policies and env rules.",
+        "order": 5
+      },
+      {
+        "id": "nexus-test-engineer",
+        "name": "Nexus Test Engineer",
+        "role": "Run smoke checks, syntax validation and repair loops.",
+        "order": 6
+      },
+      {
+        "id": "nexus-deploy-engineer",
+        "name": "Nexus Deploy Engineer",
+        "role": "Prepare GitHub, Render, public URL checks and publish notes.",
+        "order": 7
+      },
+      {
+        "id": "nexus-security-reviewer",
+        "name": "Nexus Security Reviewer",
+        "role": "Keep secrets out of the project and protect deploy files.",
+        "order": 8
+      },
+      {
+        "id": "nexus-project-memory",
+        "name": "Nexus Project Memory",
+        "role": "Preserve project-specific context for future improvements.",
+        "order": 9
+      },
+      {
+        "id": "nexus-delivery-lead",
+        "name": "Nexus Delivery Lead",
+        "role": "Summarize what changed and what is ready for the user.",
+        "order": 10
+      }
+    ],
+    "projectMemory": {
+      "conversationId": "project_centro-integrado-de-fisioterapia",
+      "rule": "Every improvement request must read docs/nexus-project-memory.md and update the same workspace."
+    },
+    "executionPhases": [
+      {
+        "id": "research",
+        "label": "Research",
+        "expectedOutput": "Context, constraints and references."
+      },
+      {
+        "id": "plan",
+        "label": "Plan",
+        "expectedOutput": "Architecture, file map and acceptance criteria."
+      },
+      {
+        "id": "build",
+        "label": "Build",
+        "expectedOutput": "Frontend, backend, database and docs files."
+      },
+      {
+        "id": "validate",
+        "label": "Validate",
+        "expectedOutput": "Smoke tests, syntax checks and repair notes."
+      },
+      {
+        "id": "preview",
+        "label": "Preview",
+        "expectedOutput": "Client-visible preview connected to the workspace."
+      },
+      {
+        "id": "publish",
+        "label": "Publish",
+        "expectedOutput": "GitHub/Render readiness and public URL monitor."
+      }
+    ],
+    "acceptanceCriteria": [
+      "Create real editable source files, not only a placeholder preview.",
+      "Ship a Supabase schema and environment example for the project database.",
+      "Expose a visual preview that matches the requested domain.",
+      "Run smoke tests and syntax checks up to five cycles.",
+      "Keep every project attached to its own memory, files, preview and publish pipeline.",
+      "Never commit secrets or frontend API keys into generated files.",
+      "Use the provided company, address, rating, review count and WhatsApp exactly.",
+      "Include hero, services, differentiators, proof, location, FAQ and final CTA."
+    ]
+  },
+  "plan": [
+    "Entender o pedido: Crie uma landing page profissional para a empresa abaixo:\n\nNome da empresa: Centro Integrado de Fisioterapia\nSegmento: Fisioterapia, Pilates clínico e RPG\nLocalização: Ponta Grossa/PR\nEndereço: Av. Monteiro Lobato, 270 - Jardim Carvalho, Ponta Grossa - PR, 84015-480\nTelefone/WhatsApp: (42) 99803-0362\nNota Google: 5.0\nQuantidade de avaliações: 11\nStatus digital: já possui presença local, mas precisa de página mais profissional\nObjetivo principal: gerar contatos pelo WhatsApp\nTom: acolhedor, técnico, moderno e direto",
+    "Preparar pesquisa externa, Maps, reputação e concorrentes quando houver empresa/local",
+    "Modelar o produto como Landing page para Fisioterapia, Pilates clínico e RPG",
+    "Criar estrutura do projeto com README, scripts, ferramentas e organização de pastas",
+    "Adicionar Supabase como banco padrao com schema SQL e env",
+    "Gerar interface principal e dados iniciais",
+    "Criar testes de smoke e validar ate 5 ciclos",
+    "Preparar preview, editor de arquivos, publish e ZIP"
+  ],
+  "events": [
+    {
+      "id": "0fdff57a",
+      "label": "Pedido recebido",
+      "status": "done",
+      "detail": "Crie uma landing page profissional para a empresa abaixo:\n\nNome da empresa: Centro Integrado de Fisioterapia\nSegmento: Fisioterapia, Pilates clínico e RPG\nLocalização: Ponta Grossa/PR\nEndereço: Av. Monteiro Lobato, 270 - Jardim Carvalho, Ponta Grossa - PR, 84015-480\nTelefone/WhatsApp: (42) 99803-0362\nNota Google: 5.0\nQuantidade de avaliações: 11\nStatus digital: já possui presença local, mas precisa de página mais profissional\nObjetivo principal: gerar contatos pelo WhatsApp\nTom: acolhedor, técnico, moderno e direto",
+      "at": "2026-06-05T07:23:04.385Z"
+    },
+    {
+      "id": "95334a4d",
+      "label": "Modelo escolhido",
+      "status": "done",
+      "detail": "gpt-4o-mini - conversion page needs research, copy and visual quality",
+      "at": "2026-06-05T07:23:04.385Z"
+    },
+    {
+      "id": "19a2aec4",
+      "label": "Plano montado",
+      "status": "done",
+      "detail": "Entender o pedido: Crie uma landing page profissional para a empresa abaixo:\n\nNome da empresa: Centro Integrado de Fisioterapia\nSegmento: Fisioterapia, Pilates clínico e RPG\nLocalização: Ponta Grossa/PR\nEndereço: Av. Monteiro Lobato, 270 - Jardim Carvalho, Ponta Grossa - PR, 84015-480\nTelefone/WhatsApp: (42) 99803-0362\nNota Google: 5.0\nQuantidade de avaliações: 11\nStatus digital: já possui presença local, mas precisa de página mais profissional\nObjetivo principal: gerar contatos pelo WhatsApp\nTom: acolhedor, técnico, moderno e direto | Preparar pesquisa externa, Maps, reputação e concorrentes quando houver empresa/local | Modelar o produto como Landing page para Fisioterapia, Pilates clínico e RPG | Criar estrutura do projeto com README, scripts, ferramentas e organização de pastas | Adicionar Supabase como banco padrao com schema SQL e env | Gerar interface principal e dados iniciais | Criar testes de smoke e validar ate 5 ciclos | Preparar preview, editor de arquivos, publish e ZIP",
+      "at": "2026-06-05T07:23:04.385Z"
+    },
+    {
+      "id": "26a447ed",
+      "label": "Agentes auxiliares",
+      "status": "done",
+      "detail": "Nexus Researcher, Nexus Product Architect, Nexus Frontend Designer, Nexus Backend Engineer, Nexus Database Engineer, Nexus Test Engineer",
+      "at": "2026-06-05T07:23:04.385Z"
+    },
+    {
+      "id": "238932b5",
+      "label": "Ferramentas ativadas",
+      "status": "done",
+      "detail": "Research, Plan, Build, Database, Design, Validate",
+      "at": "2026-06-05T07:23:04.385Z"
+    },
+    {
+      "id": "09761ea8",
+      "label": "Workspace criado",
+      "status": "done",
+      "detail": "proj_centro-integrado-de-fisioterapia_ea18df7b",
+      "at": "2026-06-05T07:23:04.385Z"
+    },
+    {
+      "id": "74c6d0bf",
+      "label": "Pesquisa externa preparada",
+      "status": "done",
+      "detail": "Google Search, Google Maps, Concorrentes locais, WhatsApp QA",
+      "at": "2026-06-05T07:23:04.386Z"
+    },
+    {
+      "id": "fec66f7a",
+      "label": "Arquivos gerados",
+      "status": "done",
+      "detail": "27 arquivos preparados",
+      "at": "2026-06-05T07:23:04.451Z"
+    },
+    {
+      "id": "9171242e",
+      "label": "Testes executados",
+      "status": "done",
+      "detail": "1/5 ciclo(s)",
+      "at": "2026-06-05T07:23:04.569Z"
+    },
+    {
+      "id": "6f6f1f7d",
+      "label": "Preview e ZIP prontos",
+      "status": "done",
+      "detail": "Projeto disponivel para abrir, editar e exportar",
+      "at": "2026-06-05T07:23:04.569Z"
+    },
+    {
+      "id": "e6f4791d",
+      "label": "Edicao manual salva",
+      "status": "done",
+      "detail": "docs/nexus-capabilities.json",
+      "at": "2026-06-05T07:23:04.727Z"
+    },
+    {
+      "id": "5d6c5981",
+      "label": "Testes apos edicao",
+      "status": "done",
+      "detail": "1/5 ciclo(s)",
+      "at": "2026-06-05T07:23:04.727Z"
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "attempts": 1,
+    "repaired": false,
+    "logs": [
+      {
+        "attempt": 1,
+        "stage": "smoke",
+        "command": "C:\\Program Files\\nodejs\\node.exe tests/smoke.test.mjs",
+        "ok": true,
+        "status": 0,
+        "output": "Landing page Replit-like smoke ok",
+        "repairedFiles": []
+      }
+    ]
+  },
+  "downloadUrl": "/api/agent-nexus/projects/proj_centro-integrado-de-fisioterapia_ea18df7b/download",
+  "previewUrl": "/api/agent-nexus/projects/proj_centro-integrado-de-fisioterapia_ea18df7b/preview",
+  "createdAt": "2026-06-05T07:23:04.569Z",
+  "files": [
+    ".env.example",
+    ".gitignore",
+    "docs/architecture.md",
+    "docs/delivery-checklist.md",
+    "docs/nexus-acceptance-tests.md",
+    "docs/nexus-capabilities.json",
+    "docs/nexus-engineering-blueprint.json",
+    "docs/nexus-engineering-brief.md",
+    "docs/research.md",
+    "index.html",
+    "nexus-project.json",
+    "nexus-tools.json",
+    "package.json",
+    "public/index.html",
+    "README.md",
+    "README.txt",
+    "rodar-local.bat",
+    "src/App.tsx",
+    "src/components/floating-whatsapp.tsx",
+    "src/components/ui/button.tsx",
+    "src/index.css",
+    "src/lib/business-data.ts",
+    "src/lib/research.ts",
+    "src/main.tsx",
+    "src/pages/home.tsx",
+    "supabase/schema.sql",
+    "tests/smoke.test.mjs",
+    "tsconfig.json",
+    "vite.config.ts"
+  ],
+  "updatedAt": "2026-06-05T07:23:04.729Z"
+}

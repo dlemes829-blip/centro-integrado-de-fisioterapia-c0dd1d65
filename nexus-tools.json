@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "minimumStandard": "replit-like-delivery",
+  "tools": [
+    {
+      "name": "Google Search",
+      "purpose": "Verificar nome, reputação, possíveis sites e menções públicas.",
+      "url": "https://www.google.com/search?q=Centro%20Integrado%20de%20Fisioterapia%20Ponta%20Grossa%2FPR"
+    },
+    {
+      "name": "Google Maps",
+      "purpose": "Verificar endereço, avaliações e rota.",
+      "url": "https://www.google.com/maps/search/?api=1&query=Centro%20Integrado%20de%20Fisioterapia%20Av.%20Monteiro%20Lobato%2C%20270%20-%20Jardim%20Carvalho%2C%20Ponta%20Grossa%20-%20PR%2C%2084015-480%20Ponta%20Grossa%2FPR"
+    },
+    {
+      "name": "Concorrentes locais",
+      "purpose": "Comparar linguagem, promessa e diferenciais do segmento.",
+      "url": "https://www.google.com/search?q=Fisioterapia%2C%20Pilates%20cl%C3%ADnico%20e%20RPG%20Ponta%20Grossa%2FPR"
+    },
+    {
+      "name": "WhatsApp QA",
+      "purpose": "Validar se o número virou wa.me com DDI brasileiro.",
+      "url": "https://wa.me/5542998030362"
+    }
+  ],
+  "qualityBar": [
+    "research-before-build",
+    "react-typescript-scaffold",
+    "responsive-preview",
+    "whatsapp-conversion",
+    "maps-and-schema",
+    "editable-files",
+    "publish-ready",
+    "no-mojibake"
+  ]
+}
