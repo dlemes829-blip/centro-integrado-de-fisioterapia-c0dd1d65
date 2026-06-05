@@ -2,7 +2,7 @@
   "id": "proj_centro-integrado-de-fisioterapia_ea18df7b",
   "name": "Centro Integrado de Fisioterapia",
   "kind": "web",
-  "status": "created",
+  "status": "deployed",
   "summary": "Arquivo editado manualmente: docs/nexus-capabilities.json",
   "engineering": {
     "version": 2,
@@ -293,6 +293,20 @@
       "status": "done",
       "detail": "1/5 ciclo(s)",
       "at": "2026-06-05T07:23:04.727Z"
+    },
+    {
+      "id": "5dcad6fe",
+      "label": "GitHub preparado",
+      "status": "done",
+      "detail": "Repositorio centro-integrado-de-fisioterapia-c0dd1d65 enviado.",
+      "at": "2026-06-05T07:23:11.979Z"
+    },
+    {
+      "id": "3a89d7fb",
+      "label": "Deploy preparado",
+      "status": "done",
+      "detail": "https://centro-integrado-de-fisioterapia-ea18df7b.onrender.com",
+      "at": "2026-06-05T07:23:14.038Z"
     }
   ],
   "validation": {
@@ -324,6 +338,7 @@
     "docs/nexus-engineering-blueprint.json",
     "docs/nexus-engineering-brief.md",
     "docs/research.md",
+    "GITHUB_READY.md",
     "index.html",
     "nexus-project.json",
     "nexus-tools.json",
@@ -345,5 +360,128 @@
     "tsconfig.json",
     "vite.config.ts"
   ],
-  "updatedAt": "2026-06-05T07:23:04.729Z"
+  "updatedAt": "2026-06-05T07:23:14.040Z",
+  "github": {
+    "prepared": true,
+    "pushed": true,
+    "repoName": "centro-integrado-de-fisioterapia-c0dd1d65",
+    "repoUrl": "https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia-c0dd1d65.git",
+    "visibility": "public",
+    "projectDir": "C:\\Users\\danie\\OneDrive\\nexus-v4-final\\nexus\\engines\\runtime\\projects\\proj_centro-integrado-de-fisioterapia_ea18df7b",
+    "commands": [
+      "git init",
+      "git add .",
+      "git commit -m \"Initial Agent Nexus project\"",
+      "gh repo create centro-integrado-de-fisioterapia-c0dd1d65 --public --source . --remote origin --push"
+    ],
+    "logs": [
+      {
+        "command": "git --version",
+        "ok": true,
+        "status": 0,
+        "output": "git version 2.54.0.windows.1"
+      },
+      {
+        "command": "git init",
+        "ok": true,
+        "status": 0,
+        "output": "Initialized empty Git repository in C:/Users/danie/OneDrive/nexus-v4-final/nexus/engines/runtime/projects/proj_centro-integrado-de-fisioterapia_ea18df7b/.git/"
+      },
+      {
+        "command": "git config user.name Agent Nexus",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git config user.email agent-nexus@nexus.local",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git add .",
+        "ok": true,
+        "status": 0,
+        "output": "warning: in the working copy of '.env.example', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'GITHUB_READY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.txt', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/architecture.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/delivery-checklist.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-acceptance-tests.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-capabilities.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-engineering-blueprint.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-engineering-brief.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/research.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-project.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-tools.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/index.html', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'rodar-local.bat', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/App.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/components/floating-whatsapp.tsx', LF will be replace..."
+      },
+      {
+        "command": "git commit -m Initial Agent Nexus project",
+        "ok": true,
+        "status": 0,
+        "output": "[master (root-commit) 1b10bcd] Initial Agent Nexus project\n 30 files changed, 1687 insertions(+)\n create mode 100644 .env.example\n create mode 100644 .gitignore\n create mode 100644 GITHUB_READY.md\n create mode 100644 README.md\n create mode 100644 README.txt\n create mode 100644 docs/architecture.md\n create mode 100644 docs/delivery-checklist.md\n create mode 100644 docs/nexus-acceptance-tests.md\n create mode 100644 docs/nexus-capabilities.json\n create mode 100644 docs/nexus-engineering-blueprint.json\n create mode 100644 docs/nexus-engineering-brief.md\n create mode 100644 docs/research.md\n create mode 100644 index.html\n create mode 100644 nexus-project.json\n create mode 100644 nexus-tools.json\n create mode 100644 package.json\n create mode 100644 public/index.html\n create mode 100644 rodar-local.bat\n create mode 100644 src/App.tsx\n create mode 100644 src/components/floating-whatsapp.tsx\n create mode 100644 src/components/ui/button.tsx\n create mode 100644 src/index.css\n create mode 100644 src/lib/business-data.ts\n create mode 100644 src/lib/research.ts\n create mode 100644 src/main.tsx\n create mode 100644 src/pages/home.tsx\n create mode 100644 supabase/schema.sql\n create mode 100644 tests/smoke.test.mjs\n create mode 100644 tsconfig.json\n create mode 100644 vite.config.ts"
+      },
+      {
+        "command": "git branch -M main",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "gh --version",
+        "ok": false,
+        "status": null,
+        "output": ""
+      },
+      {
+        "command": "GitHub API create repository",
+        "ok": true,
+        "status": 422,
+        "output": "Repository already exists or name is reserved: https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia"
+      },
+      {
+        "command": "git remote",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git remote add origin https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia.git",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git push -u origin HEAD:main",
+        "ok": false,
+        "status": 1,
+        "output": "To https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia.git\n ! [rejected]        HEAD -> main (fetch first)\nerror: failed to push some refs to 'https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia.git'\nhint: Updates were rejected because the remote contains work that you do not\nhint: have locally. This is usually caused by another repository pushing to\nhint: the same ref. If you want to integrate the remote changes, use\nhint: 'git pull' before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details."
+      },
+      {
+        "command": "GitHub API create fallback repository centro-integrado-de-fisioterapia-c0dd1d65",
+        "ok": true,
+        "status": 201,
+        "output": "Repository created: https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia-c0dd1d65"
+      },
+      {
+        "command": "git remote set-url origin https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia-c0dd1d65.git",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git push -u origin HEAD:main",
+        "ok": true,
+        "status": 0,
+        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/centro-integrado-de-fisioterapia-c0dd1d65.git/main'.\nTo https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia-c0dd1d65.git\n * [new branch]      HEAD -> main"
+      },
+      {
+        "command": "git remote get-url origin",
+        "ok": true,
+        "status": 0,
+        "output": "https://github.com/dlemes829-blip/centro-integrado-de-fisioterapia-c0dd1d65.git"
+      }
+    ]
+  },
+  "liveUrl": "https://centro-integrado-de-fisioterapia-ea18df7b.onrender.com",
+  "deployments": [
+    {
+      "id": "srv-d8h7ioflk1mc73e6ee20",
+      "provider": "render",
+      "publicUrl": "https://centro-integrado-de-fisioterapia-ea18df7b.onrender.com",
+      "dashboardUrl": "https://dashboard.render.com/static/srv-d8h7ioflk1mc73e6ee20",
+      "status": "created",
+      "createdAt": "2026-06-05T07:23:14.038Z"
+    }
+  ]
 }
